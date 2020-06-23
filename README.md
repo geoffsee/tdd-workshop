@@ -1,7 +1,9 @@
 ## Usage
 To run the tests, run `yarn run test`.
+
 ##Submit
 Push your changes to a new branch with the format [kata-name]-teamName
+
 ## Rules
  [The 3 Laws of TDD](http://butunclebob.com/ArticleS.UncleBob.TheThreeRulesOfTdd)
 
@@ -18,7 +20,7 @@ Which means the workflow is:
 ## Before you start:
 * **Try not to read ahead.**
 * **Do one task at a time. The trick is to learn to work incrementally.**
-##
+
 ### Katas
 
 ## 1. Greeter
