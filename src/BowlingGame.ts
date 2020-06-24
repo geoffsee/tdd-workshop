@@ -4,7 +4,7 @@ export default class BowlingGame {
 	rollsIndex:number = 0
 
 	public roll (pins: number): void {
-		if (pins == 10 && this.rollIndex+1 % 2 == 1) {
+		if (pins == 10 && this.rollsIndex+1 % 2 == 1) {
 			this.strike(pins);
 		} else {
             this.rolls[this.rollsIndex] = pins
@@ -16,7 +16,6 @@ export default class BowlingGame {
 	public getScore (): number {
 		//iterate through the rolls array, and add the numbers, depending on
 		//whether or not the rolls are strikes or spares or neither
-		console.log(this.rolls.toString());
 		for (let i = 0; i < this.rolls.length; i++){
 
 			if (this.rolls[i] == 10 && (i+1)%2 == 1){
@@ -31,10 +30,9 @@ export default class BowlingGame {
 		return this.score
 	}
 
-	public strike(pins: int) {
+	public strike(pins: number) {
         this.rolls[this.rollsIndex] = pins;
         this.rolls[this.rollsIndex+1] = 0;
         this.rollsIndex += 2;
-        console.log(this.rolls.toString());
 	}
 }
